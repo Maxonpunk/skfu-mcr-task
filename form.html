@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создать Героя</title>
+    <link rel="icon" href="https://flaticon.com" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mobile-wrapper">
+        <header>
+            <img src="https://flaticon.com" alt="Логотип" class="logo">
+            <h1>Создание Героя</h1>
+        </header>
+
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="form.html" class="active">Создать</a>
+            <a href="profile.html">Профиль</a>
+        </nav>
+
+        <main>
+            <form action="#" method="POST">
+                <label>Имя персонажа: <input type="text" name="char_name" required></label>
+                <label>Email игрока: <input type="email" name="email" required></label>
+                <label>Пароль для аккаунта: <input type="password" name="password" required></label>
+                <label>Уровень силы (1-100): <input type="number" name="level" min="1" max="100"></label>
+                <label>Дата создания: <input type="date" name="create_date"></label>
+                <label>Класс:
+                    <select name="class">
+                        <option value="warrior">Воин</option>
+                        <option value="mage">Маг</option>
+                        <option value="thief">Вор</option>
+                    </select>
+                </label>
+                <p>Фракция:</p>
+                <label><input type="radio" name="fraction" value="light" checked> Свет</label>
+                <label><input type="radio" name="fraction" value="dark"> Тьма</label>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="rules" required> Согласен с правилами игры
+                </label>
+                <label>Биография героя:
+                    <textarea name="bio" rows="4" placeholder="Расскажите о подвигах..."></textarea>
+                </label>
+                <div class="form-buttons">
+                    <input type="submit" value="Создать персонажа">
+                    <input type="reset" value="Сбросить">
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <img src="https://flaticon.com" alt="Логотип" class="footer-logo">
+            <p>© 2026 Все права защищены</p>
+        </footer>
+    </div>
+</body>
+</html>
