@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль Героя</title>
+    <link rel="icon" href="https://flaticon.com" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mobile-wrapper">
+        <header>
+            <img src="https://flaticon.com" alt="Логотип" class="logo">
+            <h1>Профиль Персонажа</h1>
+        </header>
+
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="form.html">Создать</a>
+            <a href="profile.html" class="active">Профиль</a>
+        </nav>
+
+        <main>
+            <div class="avatar-container">
+                <img src="https://artstation.com" alt="Аватар" class="avatar">
+            </div>
+            <div class="profile-info">
+                <p><strong>Имя:</strong> Безымянный Воин</p>
+                <p><strong>Email:</strong> player@rpg.local</p>
+                <p><strong>Уровень силы:</strong> 42</p>
+                <p><strong>Дата создания:</strong> 29.09.2026</p>
+                <p><strong>Класс:</strong> Воин</p>
+                <p><strong>Фракция:</strong> Свет</p>
+                <p><strong>Биография:</strong> Странник, ищущий приключения и кодящий лабораторные работы по ночам.</p>
+            </div>
+            <div class="password-change-block">
+                <h3>Изменение пароля</h3>
+                <form action="#" method="POST">
+                    <label>Введите старый пароль: <input type="password" name="old_password" required></label>
+                    <label>Введите новый пароль: <input type="password" name="new_password" required></label>
+                    <label>Повторите новый пароль: <input type="password" name="confirm_password" required></label>
+                    <input type="submit" value="Обновить пароль">
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <img src="https://flaticon.com" alt="Логотип" class="footer-logo">
+            <p>© 2026 Все права защищены</p>
+        </footer>
+    </div>
+</body>
+</html>
