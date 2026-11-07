@@ -1,4 +1,4 @@
-import { Component } from './shared/lib/components/types.js';
+import Component from './shared/lib/components/types';
 
 interface SurveyProps {
 title: string;
